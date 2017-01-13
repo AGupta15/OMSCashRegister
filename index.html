@@ -1,24 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> My first increment </title>
-    </head>
-    <body>
+<head>
+</head>
 
-        <h1>OMS Speech Fundraiser Cash Register </h1>
+<body>
 
-        <input type="text" name="TextBox" id="TextBox" value="0" />
-        <input type="Button" id='AddButton' value="+" />
+<script>
+    var muffins = 0;
+    // var cinna = 0;
+    // var bagels = 0;
+    // var donut = 0;
+    // var hotchoc = 0;
+    // var apple = 0;
+    // var pear = 0;
+    // var clementine = 0;
+    // var pizzaCombo = 0;
+    // var hotdogCombo = 0;
+    // var subCombo = 0;
+    var pizza = 0;
 
-        <script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#AddButton').click( function() {
-                    var counter = $('#TextBox').val();
-                    counter++ ;
-                    $('#TextBox').val(counter);
-                });
-            });
-        </script>
-    </body>
+    var muffinCost = 1.5;
+    var pizzaCost = 3;
+
+    function pizzaInc() {
+        pizza++;
+        document.getElementById('PIZZA').value++;
+    }
+    function muffinInc() {
+        muffins++;
+        document.getElementById('MUFF').value++;
+    }
+    // function cinna() {
+    //     cinna++;
+    //     document.getElementById('cinna').value = cinna;
+    // }
+    // function bagels() {
+    //     bagels++;
+    //     document.getElementById('bagels').value = bagels;
+    // }
+    // function donut() {
+    //     donut++;
+    //     document.getElementById('donut').value = donut;
+    // }
+    // function apple() {
+    //     apple++;
+    //     document.getElementById('apple').value = apple;
+    // }
+    // function pear() {
+    //     pear++;
+    //     document.getElementById('pear').value = pear;
+    // }
+    // function clementine() {
+    //     clementine++;
+    //     document.getElementById('clementine').value = clementine;
+    // }
+
+    function totalCost(){
+        var tot = 0;
+        tot = tot + document.getElementById('PIZZA').value*pizzaCost;
+        tot = tot + document.getElementById('MUFF').value*muffinCost;
+        document.getElementById("TOTAL").value = tot;
+        tot = 0;
+    }
+
+    function resetTotal(){
+        document.getElementById("PIZZA").value = 0;
+        document.getElementById("MUFF").value = 0;
+        document.getElementById("TOTAL").value = 0;
+    }
+</script>
+
+<h1>OMS Fundraiser Cash Register</h1>
+
+<button style="height:70px;width:100px" onclick="pizzaInc();">Pizza</button>
+<input style="height:70px;width:100px" type="text" id="PIZZA" value="0"></input>
+
+<br><br>
+
+<button style="height:70px;width:100px" onclick="muffinInc();">Muffin</button>
+<input style="height:70px;width:100px" type="text" id="MUFF" value="0"></input>
+
+<br><br>
+
+<!-- <button onclick="cinna();">Cinnamon Roll</button>
+<input type="text" id="cinna" value="0"></input>
+
+<br><br>
+
+<button onclick="bagels();">Bagel</button>
+<input type="text" id="bagels" value="0"></input>
+
+<br><br>
+
+<button onclick="donut();">Donut</button>
+<input type="text" id="donut" value="0"></input>
+
+<br><br>
+
+<button onclick="apple();">Apple</button>
+<input type="text" id="apple" value="0"></input>
+
+<br><br>
+
+<button onclick="pear();">Pear</button>
+<input type="text" id="pear" value="0"></input>
+
+<br><br>
+
+<button onclick="clementine();">Clementine</button>
+<input type="text" id="clementine" value="0"></input>
+
+<br><br> -->
+
+<button style="height:70px;width:100px" onclick="totalCost();">Total</button>
+<input style="height:70px;width:100px" type="text" id="TOTAL" value="0"></input>
+
+<br><br>
+
+<button style="height:70px;width:100px" onclick="resetTotal();">Reset</button>
+
+</body>
 </html>
