@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My first increment </title>
+    </head>
+    <body>
+
+        <input type="text" name="TextBox" id="TextBox" value="0" />
+        <input type="Button" id='AddButton' value="+" />
+
+        <h1>OMS Speech Fundraiser Cash Register </h1>
+
+        <script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#AddButton').click( function() {
+                    var counter = $('#TextBox').val();
+                    counter++ ;
+                    $('#TextBox').val(counter);
+                });
+            });
+        </script>
+    </body>
+</html>
