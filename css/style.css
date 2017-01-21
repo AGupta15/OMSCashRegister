@@ -1,10 +1,63 @@
 @charset 'UTF-8';
 
+#drink
+{
+	height:70px;
+	width:150px;
+	background-color: #4CAF50; /* Green */
+	font-size: 18px; 
+    font-weight: bold;
+}	
+
+#breakfast
+{
+	height:70px;
+	width:150px;
+	background-color: #FFFF00; /* Yellow */
+	font-size: 18px; 
+    font-weight: bold;
+}	
+
+#lunch
+{
+	height:70px;
+	width:150px;
+	background-color: #CC0000; /* Red */
+	font-size: 18px; 
+    font-weight: bold;
+}	
+
+#candy
+{
+	height:70px;
+	width:150px;
+	background-color: #0080ff; /* Blue */
+	font-size: 18px; 
+    font-weight: bold;
+}	
+
 #button
 {
 	height:70px;
-	width:150px
+	width:150px;
 }	
+
+#enters{
+	height:70px;
+	width:305px;
+	font-size: 18px; 
+    font-weight: bold;
+
+}
+
+#admin{
+	height:70px;
+	width:615px;
+	background-color: #000000; 
+	color:#FFFFFF;
+	font-size: 18px; 
+    font-weight: bold;
+}
 
 #buttondiv{
 	float:left;
