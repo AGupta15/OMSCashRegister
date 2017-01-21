@@ -1,224 +1,234 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-<script>
+    <script>
 
-    /* Inventory Counts */
-    var muffins = 0;
-    var bagels = 0;
-    var donut = 0;
-    var hotchoc = 0;
-    var fruit = 0;
+        /* Inventory Counts */
+        // var muffins = 0;
+        // var bagels = 0;
+        // var donut = 0;
+        // var hotchoc = 0;
+        // var fruit = 0;
 
-    var combo = 0;
+        // var combo = 0;
 
-    var pizza = 0;
-    var cookie = 0;
-    var chips = 0;
+        // var pizza = 0;
+        // var cookie = 0;
+        // var chips = 0;
 
-    var drink = 0;
-    var vitwat = 0;
+        // var drink = 0;
+        // var vitwat = 0;
 
-    var candy = 0;
-    var mixnmatch = 0;
+        // var candy = 0;
+        // var mixnmatch = 0;
 
-    /*Item Costs */
-    var muffinCost = 1;
-    var bagelCost = 1;
-    var donutCost = 1;
-    var hotchocCost = 1;
-    var fruitCost = 1;
+        /*Item Costs */
+        var muffinCost = 1;
+        var bagelCost = 1;
+        var donutCost = 1;
+        var hotchocCost = 1;
+        var fruitCost = 1;
 
-    var comboCost = 4;
+        var comboCost = 4;
 
-    var pizzaCost = 2;
-    var cookieCost = 1;
-    var chipsCost = 1;
+        var pizzaCost = 2;
+        var cookieCost = 1;
+        var chipsCost = 1;
 
-    var drinkCost = 1;
-    var vitwatCost = 2;
+        var drinkCost = 1;
+        var vitwatCost = 2;
 
-    var candyCost = 1;
-    var mixnmatchCost = 0.50;
+        var candyCost = 1;
+        var mixnmatchCost = 0.50;
+
+    // ======Total Vars=======
+    var transTot = 0;
+    var overallTot = 0;
+
 
 
     /*Increment Functions*/
     /*======BREAKFAST========*/
     function muffinInc() {
-        muffins++;
-        document.getElementById('MUFF').value++;
+        // muffins++;
+        document.getElementById('log').innerHTML += '<br>Muffin $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        //document.getElementById('MUFF').value++;
     }
     function bagelsInc() {
-        bagels++;
-        document.getElementById('BAGELS').value++;
+        // bagels++;
+        document.getElementById('log').innerHTML += '<br>Bagel $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        // document.getElementById('BAGELS').value++;
     }
     function donutInc() {
-        donut++;
-        document.getElementById('DONUT').value++;
+        // donut++;
+        document.getElementById('log').innerHTML += '<br>Donut $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        // document.getElementById('DONUT').value++;
     }
     function hotchocInc() {
-        hotchoc++;
-        document.getElementById('HOTCHOC').value++;
+        // hotchoc++;
+        document.getElementById('log').innerHTML += '<br>Hot Chocolate $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        // document.getElementById('HOTCHOC').value++;
     }
     function fruitInc() {
-        fruit++;
-        document.getElementById('FRUIT').value++;
+        // fruit++;
+        document.getElementById('log').innerHTML += '<br>Fruit $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        v
+        transTot += 1;
+        // document.getElementById('FRUIT').value++;
     }
 
     /*========COMBO=======*/
     function comboInc() {
-        combo++;
-        document.getElementById('COMBO').value++;
+        // combo++;
+        document.getElementById('log').innerHTML += '<br>Combo Meal $4.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 4;
+        // document.getElementById('COMBO').value++;
     }
 
     /*========LUNCH========*/
     function pizzaInc() {
-        pizza++;
-        document.getElementById('PIZZA').value++;
+        // pizza++;
+        document.getElementById('log').innerHTML += '<br>Pizza $2.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 2;
+        // document.getElementById('PIZZA').value++;
     }
     function cookieInc() {
-        cookie++;
-        document.getElementById('COOKIE').value++;
+        // cookie++;
+        document.getElementById('log').innerHTML += '<br>Cookie $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        // document.getElementById('COOKIE').value++;
     }
     function chipsInc() {
-        chips++;
-        document.getElementById('CHIPS').value++;
+        // chips++;
+        document.getElementById('log').innerHTML += '<br>Chips $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        // document.getElementById('CHIPS').value++;
     }
 
     /*=======DRINKS=======*/
     function drinkInc() {
-        drink++;
-        document.getElementById('DRINK').value++;
+        // drink++;
+        document.getElementById('log').innerHTML += '<br>Drink $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        // document.getElementById('DRINK').value++;
     }
     function vitwatInc() {
-        vitwat++;
-        document.getElementById('VITWAT').value++;
+        // vitwat++;
+        document.getElementById('log').innerHTML += '<br>Vitamin Water $2.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 2;
+        // document.getElementById('VITWAT').value++;
     }
 
     /*======CANDY=========*/
     function candyInc() {
-        candy++;
-        document.getElementById('CANDY').value++;
+        // candy++;
+        document.getElementById('log').innerHTML += '<br>Candy $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        // document.getElementById('CANDY').value++;
     }
     function mixnmatchInc() {
-        mixnmatch++;
-        document.getElementById('MIX').value++;
+        // mixnmatch++;
+        document.getElementById('log').innerHTML += '<br>Mix and Match $1.00';
+        document.getElementById('admintot').innerHTML = '';
+        transTot += 1;
+        // document.getElementById('MIX').value++;
     }
 
     
-    /* Total Function */
-    function totalCost(){
-        var tot = 0;
-        tot = tot + document.getElementById('MUFF').value*muffinCost;
-        tot = tot + document.getElementById('BAGELS').value*bagelCost;
-        tot = tot + document.getElementById('DONUT').value*donutCost;
-        tot = tot + document.getElementById('HOTCHOC').value*hotchocCost;
-        tot = tot + document.getElementById('FRUIT').value*fruitCost;
-        tot = tot + document.getElementById('COMBO').value*comboCost;
-        tot = tot + document.getElementById('PIZZA').value*pizzaCost;
-        tot = tot + document.getElementById('COOKIE').value*cookieCost;
-        tot = tot + document.getElementById('CHIPS').value*chipsCost;
-        tot = tot + document.getElementById('DRINK').value*drinkCost;
-        tot = tot + document.getElementById('VITWAT').value*vitwatCost;
-        tot = tot + document.getElementById('CANDY').value*candyCost;
-        tot = tot + document.getElementById('MIX').value*mixnmatchCost;
-
-        document.getElementById("TOTAL").value = tot;
-        tot = 0;
+    /* Single Transaction Total Function */
+    function enterCost(){
+        document.getElementById('log').innerHTML += '<br><h3>Total is $'+transTot+'.00 </h3>';
+        document.getElementById('admintot').innerHTML = '';
+        overallTot += transTot;
+        transTot = 0;
     }
 
     function resetTotal(){
-        document.getElementById("MUFF").value = 0;
-        document.getElementById("BAGELS").value = 0;
-        document.getElementById("DONUT").value = 0;
-        document.getElementById("HOTCHOC").value = 0;
-        document.getElementById("FRUIT").value = 0;
-        document.getElementById("COMBO").value = 0;
-        document.getElementById("PIZZA").value = 0;
-        document.getElementById("COOKIE").value = 0;
-        document.getElementById("CHIPS").value = 0;
-        document.getElementById("DRINK").value = 0;
-        document.getElementById("VITWAT").value = 0;
-        document.getElementById("CANDY").value = 0;
-        document.getElementById("MIX").value = 0;
-        document.getElementById("TOTAL").value = 0;
+        document.getElementById('log').innerHTML = '<br>';
+        document.getElementById('admintot').innerHTML = '';
+        transTot = 0;
+    }
+
+    function adminTotal(){
+        document.getElementById('admintot').innerHTML = '<br>Total transactions are $'+overallTot+'.00';
+        document.getElementById('log').innerHTML = '';
+        transTot = 0;
     }
 </script>
 
 <h1>OMS Fundraiser Cash Register</h1>
 
-<h2>Breakfast</h2>
+<!-- <h2>Breakfast</h2> -->
+<div>
+    <div id="buttondiv">
 
-<button style="height:70px;width:100px" onclick="muffinInc();">Muffin</button>
-<input style="height:70px;width:100px" type="text" id="MUFF" value="0"></input>
+        <button id="button" onclick="muffinInc();">Muffin/Bagel</button>
 
-<button style="height:70px;width:100px" onclick="bagelsInc();">Bagel</button>
-<input style="height:70px;width:100px" type="text" id="BAGELS" value="0"></input>
+        <button id="button" onclick="bagelsInc();">Donut</button>
 
-<button style="height:70px;width:100px" onclick="donutInc();">Donut</button>
-<input style="height:70px;width:100px" type="text" id="DONUT" value="0"></input>
+        <button id="button" onclick="hotchocInc();">Hot Chocolate</button>
 
-<br><br>
+        <button id="button" onclick="fruitInc();">Fruit</button>
 
-<button style="height:70px;width:100px" onclick="hotchocInc();">Hot Chocolate</button>
-<input style="height:70px;width:100px" type="text" id="HOTCHOC" value="0"></input>
+        <br><br>
 
-<button style="height:70px;width:100px" onclick="fruitInc();">Fruit</button>
-<input style="height:70px;width:100px" type="text" id="FRUIT" value="0"></input>
+        <button id="button" onclick="comboInc();">Combo</button>
 
-<br><br>
+        <button id="button" onclick="pizzaInc();">Pizza</button>
 
-<h2>Lunch</h2>
+        <button id="button" onclick="cookieInc();">Chips</button>
 
-<button style="height:70px;width:100px" onclick="comboInc();">Combo</button>
-<input style="height:70px;width:100px" type="text" id="COMBO" value="0"></input>
+        <button id="button" onclick="chipsInc();">Cookie</button>
 
+        <br><br>
 
-<button style="height:70px;width:100px" onclick="pizzaInc();">Pizza</button>
-<input style="height:70px;width:100px" type="text" id="PIZZA" value="0"></input>
+        <button id="button" onclick="drinkInc();">Drink</button>
 
-<button style="height:70px;width:100px" onclick="cookieInc();">Cookie</button>
-<input style="height:70px;width:100px" type="text" id="COOKIE" value="0"></input>
+        <button id="button" onclick="vitwatInc();">Vitamin Water</button>
 
-<br><br>
+        <button id="button" onclick="candyInc();">Candy</button>
 
-<button style="height:70px;width:100px" onclick="chipsInc();">Chips</button>
-<input style="height:70px;width:100px" type="text" id="CHIPS" value="0"></input>
+        <button id="button" onclick="mixnmatchInc();">Mix n Match</button>
 
-<br><br>
+        <br><br>
 
-<h2>Drinks</h2>
+        <!-- ====================Total========================= -->
 
-<button style="height:70px;width:100px" onclick="drinkInc();">Drink</button>
-<input style="height:70px;width:100px" type="text" id="DRINK" value="0"></input>
+        <button style="height:70px;width:205px" onclick="enterCost();">Enter</button>
 
-<button style="height:70px;width:100px" onclick="vitwatInc();">Vitamin Water</button>
-<input style="height:70px;width:100px" type="text" id="VITWAT" value="0"></input>
+        <button style="height:70px;width:205px" onclick="resetTotal();">Reset</button>
 
-<br><br>
+        <br><br>
 
-<h2>Candies</h2>
+        <button style="height:70px;width:415px" onclick="adminTotal();">Admin</button>
+    </div>
 
-<button style="height:70px;width:100px" onclick="candyInc();">Candy</button>
-<input style="height:70px;width:100px" type="text" id="CANDY" value="0"></input>
+    <div id="log"></div>
 
-<button style="height:70px;width:100px" onclick="mixnmatchInc();">Mix n Match</button>
-<input style="height:70px;width:100px" type="text" id="MIX" value="0"></input>
+    <div id="admintot"></div>
 
-<br><br>
-
-<!-- ====================Total========================= -->
-
-<h2>Totals</h2>
-
-<button style="height:70px;width:100px" onclick="totalCost();">Total</button>
-<input style="height:70px;width:100px" type="text" id="TOTAL" value="0"></input>
-
-<button style="height:70px;width:100px" onclick="resetTotal();">Reset</button>
+</div>
 
 </body>
 </html>
